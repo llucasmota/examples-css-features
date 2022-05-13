@@ -4,7 +4,8 @@ import React from 'react';
 import { OfferServiceSkeleton } from '@/domain/offer/services/OfferServiceSkeleton';
 import { Container } from '@develop-fapp/ui-kit-fapp';
 
-import HomePageHeader from './components/header';
+import { Header } from './components/Header';
+import { ScrollSnap } from './components/ScrollSnap';
 
 interface HomePageProps {
   offerService: OfferServiceSkeleton;
@@ -12,9 +13,5 @@ interface HomePageProps {
 }
 
 export const Home = ({ offerService, title }: HomePageProps): JSX.Element => {
-  return (
-    <Container container="fluid">
-      <HomePageHeader />
-    </Container>
-  );
+  return <ScrollSnap />;
 };
